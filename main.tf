@@ -22,7 +22,7 @@ resource "aws_instance" "development" {
   ami             = data.aws_ami.amazon_linux2
   instance_type   = var.development_instance_arguments.instance_type
   key_name        = aws_key_pair.development.key_name
-  security_groups = [aws_security_group.allow_ssh.id]
+  security_groups = [aws_security_group.development.id]
 }
 
 resource "aws_security_group" "development" {
