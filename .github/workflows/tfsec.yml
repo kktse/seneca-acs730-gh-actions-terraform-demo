@@ -6,8 +6,10 @@
 name: tfsec
 
 on:
-  push:
   pull_request:
+  push:
+    branches:
+      - "main"
 
 jobs:
   tfsec:
