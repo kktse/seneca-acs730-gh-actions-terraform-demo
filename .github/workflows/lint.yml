@@ -6,9 +6,6 @@ on:
     
 jobs: 
   lint:
-    defaults:
-      run:
-        working-directory: ${{ env.tf_actions_working_dir }}
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
