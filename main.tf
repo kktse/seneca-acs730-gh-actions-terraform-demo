@@ -5,11 +5,11 @@ resource "aws_default_vpc" "default_vpc" {
 }
 
 data "aws_ami" "amazon_linux2" {
-  owners      = ["amazon"]
+    owners  = ["amazon"]
   most_recent = true
   filter {
-    name   = "name"
-    values = ["amzn2-ami-hvm-*-arm64-gp2"]
+       name   = "name"
+    values =     ["amzn2-ami-hvm-*-arm64-gp2"]
   }
 }
 
