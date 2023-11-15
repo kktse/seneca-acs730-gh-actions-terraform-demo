@@ -1,8 +1,10 @@
 name: Lint project with terraform lint
 
 on:
-  push:
   pull_request:
+  push:
+    branches:
+      - "main"
     
 jobs: 
   lint:
