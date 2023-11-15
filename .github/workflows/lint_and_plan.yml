@@ -1,4 +1,4 @@
-name: Lint & Plan
+name: Lint, plan and apply
 
 on:
   pull_request:
